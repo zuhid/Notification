@@ -1,0 +1,13 @@
+@Notification_HostAddress = http://localhost:5102
+
+POST {{Notification_HostAddress}}/Auth/VerifyEmail
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "user@example.com",
+  "appUrl": "http://localhost:3000",
+  "token": "sample-verification-token"
+}
+
+###
